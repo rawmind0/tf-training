@@ -135,8 +135,8 @@ A user has a Rancher2 up and running and he wants to create a new catalog at Ran
 ```
 # Provider config
 provider "rancher2" {
-  api_url = rancher2_bootstrap.admin.url
-  token_key = rancher2_bootstrap.admin.token
+  api_url = "https://<RANCHER_URL>"
+  token_key = "XXXXXXXXXXXXXXXX"
   insecure = true
 }
 
@@ -172,8 +172,8 @@ A user has manually configured a catalog on Rancher. He knows the catalog name b
 ```
 # Provider config
 provider "rancher2" {
-  api_url = rancher2_bootstrap.admin.url
-  token_key = rancher2_bootstrap.admin.token
+  api_url = "https://<RANCHER_URL>"
+  token_key = "XXXXXXXXXXXXXXXX"
   insecure = true
 }
 
